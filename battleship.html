@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Battleship</title>
+    <link href="css/battleship.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/computerLogic.js" type="text/javascript"></script>
+    <script src="js/selfPlacement.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="title">Battleship</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="targetShipsHeader">Enemy ships</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div id="leftBox">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <table id="grid">
+          </table>
+        </div>
+        <div class="col-sm-3">
+          <div id="rightBox">
+            <p id="message"></p><br /><br />
+            <h5 id="targetsHeader">Enemy ships remaining</h5>
+            <ul>
+              <li id="Destroyer">Destroyer: Active</li>
+              <li id="Patrol Boat">Patrol Boat: Active</li>
+              <li id="Submarine">Submarine: Active</li>
+              <li id="Battleship">Battleship: Active</li>
+              <li id="Aircraft Carrier">Aircraft Carrier: Active</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="myShipsHeader">My ships</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <table id="myGrid">
+          </table>
+        </div>
+        <div class="col-sm-3">
+          <div id="myBox">
+            <p id="compMessage" class="redFont">To begin, place your ships on the grid to the left and then push "Play Game".<br>
+              Or select "Randomize Placement".</p><br /><br />
+            <h5 id="myRemainingShips">My remaining ships</h5>
+            <ul>
+              <li id="myDestroyer">Destroyer: Active</li>
+              <li id="myPatrol Boat">Patrol Boat: Active</li>
+              <li id="mySubmarine">Submarine: Active</li>
+              <li id="myBattleship">Battleship: Active</li>
+              <li id="myAircraft Carrier">Aircraft Carrier: Active</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <button id="rotate" onclick="shipToPlace.rotateShip()">Rotate Ship</button>
+          <button id="playGame" onclick="playGame()">Play Game</button>
+          <button id="random" onclick="randomizePlacement()">Randomize Placement</button>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+      <div id="footer" class="row">
+       
+        <div class="col-sm-2">
+        </div>
+      </div>
+    </div>
+ 
+    <script src="js/battleship.js" type="text/javascript"></script>
+  </body>
+</html>
