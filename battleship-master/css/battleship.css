@@ -1,0 +1,112 @@
+td{
+  height: 30px;
+  width: 30px;
+  border: black solid 1px;
+}
+
+#title{
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight:bold;
+  font-size:3em;
+}
+
+body{
+    font-family:sans-serif;
+    font-weight:bold;
+}
+
+
+table{
+  margin: auto;
+}
+
+li {
+  font-family: sans-serif; 
+}
+
+.redFont {
+  color: red;
+  font-weight: bold;
+}
+
+.ship {
+  background-color: black;
+}
+
+.redBorder {
+  border: red solid 5px;
+}
+
+#targetsHeader, #myRemainingShips {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+#myShipsHeader, #targetShipsHeader{
+  text-align: center;
+  color: black;
+}
+
+button {
+  margin: auto;
+}
+
+.validPlacement {
+  background-color:#0d39e5;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.invalidPlacement {
+  background-color: #f10000;
+}
+
+.sunk {
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: #808080
+}
+
+#rightBox, #myBox{
+  background-color: #12a6cf;
+  padding: 10px;
+  color: black;
+  height: 300px;
+  border: black solid 2px;
+}
+
+#audio {
+  visibility: hidden;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: yellow;
+}
+
+.fourPlus {
+  background-color: purple;
+}
+
+.tenPlus {
+  background-color: green;
+}
